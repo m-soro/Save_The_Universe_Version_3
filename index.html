@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>Save The Universe</li>
+      <li>Captain's Name:</li>
+      <li>
+        <form action="">
+          <label for="playerName">
+            <input
+              type="text"
+              name="playerName"
+              class="playerName"
+              value="Captain"
+            />
+          </label>
+          <button type="button" name="playerName" class="playerNameButton">
+            Submit
+          </button>
+        </form>
+      </li>
+      <li>Easy</li>
+      <li>Medium</li>
+      <li>Difficult</li>
+      <li>HIDE Stats</li>
+      <li>Change Scenes</li>
+    </ul>
+
+    <div class="bodyContainer">
+      <div class="mainCharacterView left">
+        <div class="nameBox player">USS Schwarzenegger</div>
+        <button class="playerImage" name="myShip"></button>
+        <div class="playerStats">
+          <ul></ul>
+        </div>
+      </div>
+
+      <div class="message-container">
+        <div class="gameStats">
+          <p class="battleNum"></p>
+          <p class="heroScore"></p>
+          <p class="heroAcc"></p>
+          <p class="alienScore"></p>
+          <p class="alienAcc"></p>
+          <br />
+        </div>
+        <div class="message">
+          <p>Captain, Launch your Attack!</p>
+        </div>
+      </div>
+
+      <div class="mainCharacterView right">
+        <div class="nameBox enemy">Enemy</div>
+        <button class="enemyImage" name="aliens"></button>
+        <div class="enemyStats">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
